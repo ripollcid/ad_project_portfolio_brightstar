@@ -1,0 +1,481 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+div {
+    position: absolute;
+}
+
+#ad-container {
+    width: 300px;
+    height: 250px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+
+#bg {
+    width: 487px;
+    height: 188px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url("assets/spritesheet_300x250.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+#bg_overlay {
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #98a2c1;
+}
+
+#logo_white {
+    width: 111px;
+    height: 46px;
+    position: absolute;
+    top: 5px;
+    left: 16px;
+    background-image: url("assets/spritesheet_300x250.png");
+    background-repeat: no-repeat;
+    background-position: -411px 0;
+}
+
+#logo_blue {
+    width: 111px;
+    height: 46px;
+    position: absolute;
+    top: 5px;
+    left: 16px;
+    background-image: url("assets/spritesheet_300x250.png");
+    background-repeat: no-repeat;
+    background-position: -300px 0;
+}
+
+#card {
+    width: 200px;
+    height: 200px;
+    top: 18px;
+    left: 112px;
+    background-image: url("assets/cardAnimation.png");
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+#swoop {
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    top: -250px;
+    left: 0px;
+    background-image: url("assets/spritesheet_300x250.png");
+    background-repeat: no-repeat;
+    background-position: -522px 0;
+}
+
+#zeroAPR_line1 {
+    width: 238px;
+    height: 40px;
+    position: absolute;
+    top: 107px;
+    left: 31px;
+    opacity: 0;
+    background-image: url("assets/zeroAPR_300x250.svg");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+#zeroAPR_line2 {
+    width: 238px;
+    height: 17px;
+    position: absolute;
+    top: 164px;
+    left: 31px;
+    opacity: 0;
+    background-image: url("assets/zeroAPR_300x250.svg");
+    background-repeat: no-repeat;
+    background-position: 0px -56px;
+}
+
+#zeroAPR_line3 {
+    width: 238px;
+    height: 17px;
+    position: absolute;
+    top: 198px;
+    left: 31px;
+    opacity: 0;
+    background-image: url("assets/zeroAPR_300x250.svg");
+    background-repeat: no-repeat;
+    background-position: 0px -90px;
+}
+
+#zeroAPR_line4 {
+    width: 238px;
+    height: 21px;
+    position: absolute;
+    top: 231px;
+    left: 31px;
+    opacity: 0;
+    background-image: url("assets/zeroAPR_300x250.svg");
+    background-repeat: no-repeat;
+    background-position: 0px -123px;
+}
+
+#designedForSmall_line1 {
+    width: 139px;
+    height: 18px;
+    position: absolute;
+    top: 185px;
+    left: 13px;
+    opacity: 0;
+    background-image: url("assets/designedForSmallBusinesses_300x250.svg");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+#designedForSmall_line2 {
+    width: 139px;
+    height: 18px;
+    position: absolute;
+    top: 203px;
+    left: 13px;
+    opacity: 0;
+    background-image: url("assets/designedForSmallBusinesses_300x250.svg");
+    background-repeat: no-repeat;
+    background-position: 0px -18px;
+}
+
+#designedForSmall_line3 {
+    width: 139px;
+    height: 18px;
+    position: absolute;
+    top: 221px;
+    left: 13px;
+    opacity: 0;
+    background-image: url("assets/designedForSmallBusinesses_300x250.svg");
+    background-repeat: no-repeat;
+    background-position: 0px -36px;
+}
+
+#businessEliteRewards_line1 {
+    width: 129px;
+    height: 13px;
+    position: absolute;
+    top: 44px;
+    left: 149px;
+    opacity: 0;
+    background-image: url("assets/businessEliteRewards.svg");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+#businessEliteRewards_line2 {
+    width: 129px;
+    height: 14px;
+    position: absolute;
+    top: 58px;
+    left: 149px;
+    opacity: 0;
+    background-image: url("assets/businessEliteRewards.svg");
+    background-repeat: no-repeat;
+    background-position: 0px -14px;
+}
+
+#earnRewardPoints_line1 {
+    width: 274px;
+    height: 9px;
+    position: absolute;
+    top: 251px;
+    left: 13px;
+    opacity: 0;
+    background-image: url("assets/earnRewardPoints_300x250.svg");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+#gradient_overlay {
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url("assets/spritesheet_300x250.png");
+    background-repeat: no-repeat;
+    background-position: 0 -250px;
+}
+
+#cta {
+    width: 110px;
+    height: 28px;
+    position: absolute;
+    top: 191px;
+    left: 177px;
+    opacity: 0;
+    background-image: url("assets/cta.svg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#ctaSheen {
+    width: 220px;
+    height: 28px;
+    position: absolute;
+    top: 0px;
+    left: -110px;
+    background-image: url("assets/ctaSheen.svg");
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+#cta:hover {
+    background-position: right top;
+}
+
+#border {
+    width: 298px;
+    height: 248px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-style: solid;
+    border-color: #444854;
+    border-width: 1px;
+    pointer-events: none;
+}
+
+
+.frame1 {
+    background-position: 0 0;
+}
+
+.frame2 {
+    background-position: -200px 0;
+}
+
+.frame3 {
+    background-position: -400px 0;
+}
+
+.frame4 {
+    background-position: -600px 0;
+}
+
+.frame5 {
+    background-position: -800px 0;
+}
+
+.frame6 {
+    background-position: -1000px 0;
+}
+
+.frame7 {
+    background-position: 0 -200px;
+}
+
+.frame8 {
+    background-position: -200px -200px;
+}
+
+.frame9 {
+    background-position: -400px -200px;
+}
+
+.frame10 {
+    background-position: -600px -200px;
+}
+
+.frame11 {
+    background-position: -800px -200px;
+}
+
+.frame12 {
+    background-position: -1000px -200px;
+}
+
+.frame13 {
+    background-position: 0 -400px;
+}
+
+.frame14 {
+    background-position: -200px -400px;
+}
+
+.frame15 {
+    background-position: -400px -400px;
+}
+
+.frame16 {
+    background-position: -600px -400px;
+}
+
+.frame17 {
+    background-position: -800px -400px;
+}
+
+.frame18 {
+    background-position: -1000px -400px;
+}
+
+.frame19 {
+    background-position: 0 -600px;
+}
+
+.frame20 {
+    background-position: -200px -600px;
+}
+
+.frame21 {
+    background-position: -400px -600px;
+}
+
+.frame22 {
+    background-position: -600px -600px;
+}
+
+.frame23 {
+    background-position: -800px -600px;
+}
+
+.frame24 {
+    background-position: -1000px -600px;
+}
+
+.frame25 {
+    background-position: 0 -800px;
+}
+
+.frame26 {
+    background-position: -200px -800px;
+}
+
+.frame27 {
+    background-position: -400px -800px;
+}
+
+.frame28 {
+    background-position: -600px -800px;
+}
+
+.frame29 {
+    background-position: -800px -800px;
+}
+
+.frame30 {
+    background-position: -1000px -800px;
+}
+
+.frame31 {
+    background-position: 0 -1000px;
+}
+
+.frame32 {
+    background-position: -200px -1000px;
+}
+
+.frame33 {
+    background-position: -400px -1000px;
+}
+
+.frame34 {
+    background-position: -600px -1000px;
+}
+
+.frame35 {
+    background-position: -800px -1000px;
+}
+
+.frame36 {
+    background-position: -1000px -1000px;
+}
+
+.frame37 {
+    background-position: -1200px 0;
+}
+
+.frame38 {
+    background-position: -1200px -200px;
+}
+
+.frame39 {
+    background-position: -1200px -400px;
+}
+
+.frame40 {
+    background-position: -1200px -600px;
+}
+
+.frame41 {
+    background-position: -1200px -800px;
+}
+
+.frame42 {
+    background-position: -1200px -1000px;
+}
+
+.frame43 {
+    background-position: 0 -1200px;
+}
+
+.frame44 {
+    background-position: -200px -1200px;
+}
+
+.frame45 {
+    background-position: -400px -1200px;
+}
